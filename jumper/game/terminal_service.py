@@ -10,9 +10,13 @@ class terminal_service:
 
         
 
-    def write_text(self, to_print):
+    def write_text(self, hidden_word):
         """"""
-        print(to_print)
+        print(hidden_word)
 
-    def read_text(self):
-        """"""
+    def read_text(self, prompt):
+        """Gets an input from the user."""
+
+        response = input(prompt)
+
+        return response
